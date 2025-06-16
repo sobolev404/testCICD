@@ -42,4 +42,4 @@ jobs:
 
       - name: Upload Portal Changes
         run: |
-          pac paportal upload --path src/MyPortal
+          pac paportal upload --path src/MyPortal/test---site-e6pz4
