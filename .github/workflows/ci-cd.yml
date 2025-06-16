@@ -38,7 +38,7 @@ jobs:
           pac auth create --applicationId ${{ secrets.CLIENT_ID }} `
                           --clientSecret ${{ secrets.CLIENT_SECRET }} `
                           --tenant ${{ secrets.TENANT_ID }} `
-                          --environment ${{ env.ENV_URL }}
+                          --environment ${{ secrets.ENV_URL }}
 
       - name: Upload Portal Changes
         run: |
