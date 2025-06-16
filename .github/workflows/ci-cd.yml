@@ -35,10 +35,10 @@ jobs:
 
       - name: Authenticate with Power Platform
         run: |
-          pac auth create --clientId ${{ secrets.CLIENT_ID }} `
+          pac auth create --applicationId ${{ secrets.CLIENT_ID }} `
                           --clientSecret ${{ secrets.CLIENT_SECRET }} `
                           --tenant ${{ secrets.TENANT_ID }} `
-                          --url ${{ env.ENV_URL }}
+                          --environment ${{ env.ENV_URL }}
 
       - name: Upload Portal Changes
         run: |
